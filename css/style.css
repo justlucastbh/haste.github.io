@@ -25,29 +25,30 @@ h1 {
     font-size: 0.8em;
 }
 
-.file-table {
-    width: 100%;
-    border-collapse: collapse;
+.checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.file-table td {
-    padding: 15px;
-    border-bottom: 1px solid #3c3c3c;
-}
-
-.file-table a {
+.list-item {
     color: #d4d4d4;
     text-decoration: none;
-    display: block;
+    padding: 12px 15px;
+    border-radius: 4px;
+    background-color: #2d2d2d;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.file-table a:hover {
-    color: #4ec9b0;
+.list-item:hover {
+    background-color: #3c3c3c;
     transform: translateX(5px);
 }
 
-.fa-link {
+.fa-check {
     color: #4ec9b0;
-    margin-right: 10px;
+    font-size: 0.9em;
 }
