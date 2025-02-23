@@ -75,7 +75,7 @@ body {
     font-size: 1.1rem;
     font-weight: 500;
     color: #f0f0f0; /* Light gray text */
-    background: linear-gradient(45deg, #ffffff, #d8a6ff); /* White to pastel purple */
+    background: linear-gradient(45deg, #7a5fff, #2a2a2a); /* Pastel purple to black */
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -83,21 +83,21 @@ body {
     text-decoration: none;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .modern-button::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), transparent);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), transparent);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 .modern-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .modern-button:hover::before {
