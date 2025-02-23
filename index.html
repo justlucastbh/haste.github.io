@@ -3,62 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haste Explorer</title>
+    <title>Haste Archive</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="nav-group">
-            <div class="nav-item" data-section="home">
-                <i class="fas fa-home"></i>
-                Home
-            </div>
-            <div class="nav-item" data-section="executors">
-                <i class="fas fa-desktop"></i>
-                Executors
-            </div>
-            <div class="nav-item" data-section="externals">
-                <i class="fas fa-cube"></i>
-                Externals
-            </div>
-            <div class="nav-item" data-section="mobile">
-                <i class="fas fa-mobile-alt"></i>
-                Mobile
-            </div>
-        </div>
-
-        <div class="nav-group">
-            <div class="nav-item" data-section="security">
-                <i class="fas fa-shield-alt"></i>
-                Security Center
-            </div>
-            <div class="nav-item" data-section="downloads">
-                <i class="fas fa-download"></i>
-                Downloads
-            </div>
-        </div>
+    <div class="explorer">
+        <h1>Haste Archive <span class="subtitle">› By Lucas(devilstatus.)</span></h1>
+        
+        <table class="file-table">
+            <tbody>
+                <tr><td><a href="https://discord.gg/CZHY8u7DNp" target="_blank"><i class="fa-regular fa-link"></i> Plutora</a></td></tr>
+                <tr><td><a href="https://discord.gg/NpcDgxCP2y" target="_blank"><i class="fa-regular fa-link"></i> Dynamic</a></td></tr>
+                <tr><td><a href="https://discord.gg/getvelocity" target="_blank"><i class="fa-regular fa-link"></i> Velocity</a></td></tr>
+                <tr><td><a href="https://discord.gg/WSuAN7v8ZR" target="_blank"><i class="fa-regular fa-link"></i> Horizon</a></td></tr>
+                <tr><td><a href="https://discord.gg/CbHD2KwaZg" target="_blank"><i class="fa-regular fa-link"></i> Thunder's External</a></td></tr>
+            </tbody>
+        </table>
     </div>
-
-    <!-- Main Content -->
-    <div class="explorer" id="mainContent">
-        <div class="breadcrumbs" id="breadcrumbs">
-            <span class="breadcrumb-item">Haste</span>
-            <span class="breadcrumb-item">Executors</span>
-        </div>
-
-        <div class="grid-view" id="contentGrid">
-            <!-- Content loaded dynamically -->
-        </div>
-    </div>
-
-    <!-- Status Bar -->
-    <div class="status-bar">
-        <div>Ready</div>
-        <div>Items: <span id="itemCount">0</span></div>
-    </div>
-
-    <script src="js/app.js"></script>
 </body>
 </html>
