@@ -1,0 +1,70 @@
+:root {
+    --bg: #0f0f0f;
+    --text: #e0e0e0;
+    --accent: #ff4d4d;
+    --glass: rgba(255, 255, 255, 0.05);
+}
+
+body {
+    font-family: 'Inter', system-ui;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.archive-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--accent);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.modern-list {
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.list-item {
+    display: block;
+    padding: 1.25rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.list-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateX(10px);
+}
+
+.list-item::after {
+    content: '→';
+    position: absolute;
+    right: 1.5rem;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.list-item:hover::after {
+    opacity: 1;
+}
+
+.item-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
