@@ -68,13 +68,14 @@ body {
     font-size: 1.1rem;
     font-weight: 500;
 }
+/* Modern Button Styles */
 .modern-button {
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 1.1rem;
     font-weight: 500;
-    color: white;
-    background: linear-gradient(45deg, #007BFF, #0056b3);
+    color: #2a2a2a; /* Dark text for contrast */
+    background: linear-gradient(45deg, #ffffff, #a6d8ff); /* White to pastel blue */
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -82,13 +83,14 @@ body {
     text-decoration: none;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .modern-button::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), transparent);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), transparent);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
