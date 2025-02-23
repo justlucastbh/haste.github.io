@@ -3,49 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haste Archive</title>
+    <title>Haste Explorer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/transitions.js"></script>
 </head>
-<body class="page-transition">
-    <div class="container">
-        <h1 class="archive-title">Haste Archive</h1>
-        <p class="security-notice">Security is always first</p>
-        
-        <div class="modern-list">
-            <!-- Executors Section -->
-            <div class="separator"></div>
-            
-            <a href="dynamic/index.html" class="list-item" data-transition>
-                <span class="item-title">Dynamic</span>
-            </a>
-            <a href="plutora/index.html" class="list-item" data-transition>
-                <span class="item-title">Plutora</span>
-            </a>
-            <a href="velocity/index.html" class="list-item" data-transition>
-                <span class="item-title">Velocity</span>
-            </a>
-            <a href="luna/index.html" class="list-item" data-transition>
-                <span class="item-title">Luna [unverified]</span>
-            </a>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="nav-group">
+            <div class="nav-item" data-section="home">
+                <i class="fas fa-home"></i>
+                Home
+            </div>
+            <div class="nav-item" data-section="executors">
+                <i class="fas fa-desktop"></i>
+                Executors
+            </div>
+            <div class="nav-item" data-section="externals">
+                <i class="fas fa-cube"></i>
+                Externals
+            </div>
+            <div class="nav-item" data-section="mobile">
+                <i class="fas fa-mobile-alt"></i>
+                Mobile
+            </div>
+        </div>
 
-            <!-- Externals Section -->
-            <div class="separator"></div>
-            
-            <a href="horizon/index.html" class="list-item" data-transition>
-                <span class="item-title">Horizon</span>
-            </a>
-            <a href="thunder/index.html" class="list-item" data-transition>
-                <span class="item-title">Thunder's External</span>
-            </a>
-
-            <!-- Mobile Executors Section -->
-            <div class="separator"></div>
-            
-            <a href="nebula/index.html" class="list-item" data-transition>
-                <span class="item-title">Nebula</span>
-            </a>
+        <div class="nav-group">
+            <div class="nav-item" data-section="security">
+                <i class="fas fa-shield-alt"></i>
+                Security Center
+            </div>
+            <div class="nav-item" data-section="downloads">
+                <i class="fas fa-download"></i>
+                Downloads
+            </div>
         </div>
     </div>
+
+    <!-- Main Content -->
+    <div class="explorer" id="mainContent">
+        <div class="breadcrumbs" id="breadcrumbs">
+            <span class="breadcrumb-item">Haste</span>
+            <span class="breadcrumb-item">Executors</span>
+        </div>
+
+        <div class="grid-view" id="contentGrid">
+            <!-- Content loaded dynamically -->
+        </div>
+    </div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div>Ready</div>
+        <div>Items: <span id="itemCount">0</span></div>
+    </div>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
