@@ -1,0 +1,121 @@
+:root {
+    --bg: #1a1a1a;
+    --surface: #2d2d2d;
+    --accent: #0078d4;
+    --text: #e8e8e8;
+    --border: #404040;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui;
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background: var(--surface);
+    padding: 1rem;
+    border-right: 1px solid var(--border);
+}
+
+.nav-group {
+    margin-bottom: 1.5rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+.nav-item i {
+    width: 20px;
+    text-align: center;
+}
+
+/* Main Content Styles */
+.explorer {
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #a0a0a0;
+}
+
+.breadcrumb-item {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb-item:hover {
+    color: var(--text);
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.5rem;
+}
+
+.explorer-item {
+    padding: 1rem;
+    border-radius: 6px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.explorer-item:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.item-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+}
+
+.item-name {
+    font-size: 0.9rem;
+    word-break: break-word;
+}
+
+/* Status Bar Styles */
+.status-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
