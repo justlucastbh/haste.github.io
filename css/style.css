@@ -263,3 +263,8 @@ body {
     width: 100%;
     text-align: center;
 }
+.button-group {
+    display: grid;
+    gap: 1rem;
+    margin: 2rem 0;
+}
