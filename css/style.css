@@ -201,3 +201,12 @@ body {
     height: 100%;
     border-radius: 8px;
 }
+.security-notice {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text); /* Using the existing text color variable */
+    opacity: 0.8;
+    margin: -1rem 0 2rem 0;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
