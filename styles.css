@@ -1,8 +1,10 @@
+/* Base Styles */
 body {
     background-color: #000000;
     color: #6A0DAD;
     font-family: 'Courier New', monospace;
     margin: 40px;
+    min-height: 100vh;
 }
 
 .container {
@@ -10,29 +12,64 @@ body {
     margin: 0 auto;
 }
 
+/* Header Section */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #4B0082;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #6A0DAD;
+    letter-spacing: 1px;
+}
+
+/* Path Navigation */
 .path-nav {
     color: #4B0082;
-    margin-bottom: 30px;
-    font-size: 0.9em;
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: -10px;
 }
 
 .path-nav a {
     color: inherit;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
+.path-nav a:hover {
+    color: #8A2BE2;
+}
+
+/* Content Area */
 .content {
     border-left: 2px solid #4B0082;
     padding-left: 20px;
+    margin-top: 20px;
 }
 
+.file-content {
+    margin: 25px 0;
+    padding: 20px;
+    border: 1px solid #4B0082;
+    border-radius: 4px;
+    background-color: #0A0A0A;
+}
+
+/* Links and Interactions */
 .text-link {
     color: inherit;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
     display: inline-block;
-    margin: 8px 0;
+    margin: 10px 0;
 }
 
 .text-link:hover {
@@ -40,9 +77,39 @@ body {
     transform: scale(1.03);
 }
 
-.file-content {
-    margin-top: 20px;
-    padding: 15px;
-    border: 1px solid #4B0082;
-    border-radius: 3px;
+/* Status Indicators */
+.status-active {
+    color: #4ec9b0 !important;
+}
+
+.status-warning {
+    color: #ff5555 !important;
+}
+
+/* File Metadata */
+.file-meta {
+    color: #4B0082;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+    }
+    
+    .header-container {
+        flex-direction: column;
+    }
+    
+    .path-nav {
+        text-align: left;
+        margin-top: 10px;
+    }
+    
+    .content {
+        border-left: none;
+        padding-left: 0;
+    }
 }
