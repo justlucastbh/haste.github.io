@@ -74,8 +74,8 @@ body {
     padding: 1rem 2rem;
     font-size: 1.1rem;
     font-weight: 500;
-    color: #2a2a2a; /* Dark text for contrast */
-    background: linear-gradient(45deg, #ffffff, #a6d8ff); /* White to pastel blue */
+    color: #f0f0f0; /* Light gray text */
+    background: linear-gradient(45deg, #ffffff, #d8a6ff); /* White to pastel purple */
     border: none;
     border-radius: 25px;
     cursor: pointer;
