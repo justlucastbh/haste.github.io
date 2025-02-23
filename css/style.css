@@ -186,3 +186,27 @@ body {
     opacity: 0.8;
     margin-top: 0.5rem;
 }
+.update-details {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+.timestamp {
+    color: var(--accent);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.warning {
+    color: #ff4d4d;
+    font-size: 0.85rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background: rgba(255,77,77,0.1);
+    border-radius: 6px;
+}
+
+.youtube-button {
+    background: linear-gradient(45deg, #ff0000, #cc0000);
+    margin-top: 1rem;
+}
