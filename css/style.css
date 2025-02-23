@@ -1,54 +1,69 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1e1e1e;
-    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
     margin: 0;
     padding: 20px;
+    min-height: 100vh;
 }
 
-.explorer {
-    max-width: 600px;
+.container {
+    max-width: 800px;
     margin: 0 auto;
-    background-color: #252526;
-    border-radius: 5px;
-    padding: 20px;
+    padding: 30px;
 }
 
 h1 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #569cd6;
+    color: #6A0DAD; /* Dark purple */
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #6A0DAD;
+    padding-bottom: 10px;
 }
 
 .subtitle {
-    color: #858585;
+    color: #4B0082; /* Darker purple */
+    font-size: 0.7em;
+    letter-spacing: 1px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #1A1A1A;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.link-list li:hover {
+    transform: translateX(10px);
+}
+
+.link-list a {
+    color: #6A0DAD; /* Dark purple */
+    text-decoration: none;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.fa-arrow-right {
+    color: #4ec9b0; /* Teal accent */
+    margin-right: 15px;
     font-size: 0.8em;
 }
 
-.checklist {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.list-item {
-    color: #d4d4d4;
-    text-decoration: none;
-    padding: 12px 15px;
-    border-radius: 4px;
+/* Hover effects */
+.link-list li:hover {
     background-color: #2d2d2d;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
-.list-item:hover {
-    background-color: #3c3c3c;
-    transform: translateX(5px);
-}
-
-.fa-check {
-    color: #4ec9b0;
-    font-size: 0.9em;
+.link-list a:hover {
+    color: #8A2BE2; /* Brighter purple on hover */
 }
