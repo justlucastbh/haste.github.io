@@ -183,3 +183,22 @@ h1 {
     font-size: 0.9em;
     transition: color 0.3s ease;
 }
+.text-link.inactive {
+    color: #6A0DAD80; /* 50% opacity */
+    cursor: default;
+    position: relative;
+}
+
+.text-link.inactive:hover {
+    transform: none;
+    color: #6A0DAD80;
+}
+
+.text-link.inactive::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    border-bottom: 1px dashed #ff5555;
+}
