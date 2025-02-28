@@ -161,9 +161,6 @@ h1 {
 .status-online {
     color: #4ec9b0 !important;
 }
-.checkbox[style*="color: #4ec9b0"] {
-    color: #4ec9b0 !important;
-}
 .text-link:not(.offline) {
     color: #6A0DAD;
     cursor: pointer;
@@ -171,4 +168,18 @@ h1 {
 .text-link:not(.offline):hover {
     color: #8A2BE2;
     transform: translateX(5px);
+}
+.checkbox.online {
+    color: #4ec9b0; /* Green color */
+}
+
+.checkbox.offline {
+    color: #ff5555; /* Red color */
+}
+
+/* Update existing checkbox rule */
+.checkbox {
+    margin-right: 15px;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
 }
