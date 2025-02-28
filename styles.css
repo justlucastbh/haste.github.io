@@ -158,22 +158,16 @@ h1 {
     transform: none;
     color: #6A0DAD80;
 }
-/* Add to styles.css */
 .status-online {
     color: #4ec9b0 !important;
 }
-
-/* Update checkbox color for online items */
 .checkbox[style*="color: #4ec9b0"] {
     color: #4ec9b0 !important;
 }
-
-/* Restore normal link behavior for online items */
 .text-link:not(.offline) {
     color: #6A0DAD;
     cursor: pointer;
 }
-
 .text-link:not(.offline):hover {
     color: #8A2BE2;
     transform: translateX(5px);
