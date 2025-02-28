@@ -189,11 +189,12 @@ h1 {
     position: relative;
 }
 
-.text-link.inactive:hover {
-    transform: none;
+/* For inactive items */
+.text-link.inactive {
     color: #6A0DAD80;
+    cursor: default;
+    position: relative;
 }
-
 .text-link.inactive::after {
     content: "";
     position: absolute;
@@ -202,3 +203,17 @@ h1 {
     bottom: -2px;
     border-bottom: 1px dashed #ff5555;
 }
+
+/* For active items */
+.text-link {
+    color: #6A0DAD;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.text-link:hover {
+    color: #8A2BE2;
+    transform: translateX(5px);
+}
+    
